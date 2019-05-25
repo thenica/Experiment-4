@@ -1,0 +1,74 @@
+#include<iostream>
+using namespace std;
+
+
+int add(int x,int y)
+{
+int a;
+a=x+y;
+cout<<"Result : "<<a;
+}
+int sub(int x,int y)
+{
+int a;
+a=x-y;
+cout<<"Your Ans Is : "<<a;
+}
+int multiply (int x,int y)
+{
+int a;
+a=x*y;
+cout<<"Your Ans Is : "<<a;
+}
+int division(int x,int y)
+{
+int a;
+a=x/y;
+cout<<"Your Ans Is : "<<a;
+}
+int modu(int x,int y)
+{
+int a;
+a=x%y;
+cout<<"Your Ans Is : "<<a;
+cout <<"\n";
+}
+
+int main()
+{
+int a,b,c;
+char confirm;
+do
+{
+cout<<"1. Add"<<endl;
+cout<<"2. Substraction"<<endl;
+cout<<"3. Multipication"<<endl;
+cout<<"4. Division"<<endl;
+cout<<"5. Moduals"<<endl;
+cout<<endl<<"Please Choose One Option : ";cin>>a;
+cout<<endl<<"Enter Two Value : ";cin>>b>>c;
+switch(a)
+{
+case 1:
+add(b,c);
+break;
+case 2:
+sub(b,c);
+break;
+case 3:
+multiply(b,c);
+break;
+case 4:
+division(b,c);
+break;
+case 5:
+modu(b,c);
+break;
+default:
+cout<<"Invalid Input";
+}
+cout<<endl<<endl<<"Enter Y to operate again:";cin>>confirm;
+}
+while(confirm == 'Y'||confirm=='y');
+
+}
